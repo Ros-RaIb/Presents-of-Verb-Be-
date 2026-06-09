@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Aprende el Verbo To Be en presente: am, is, are. Formas afirmativa, negativa y preguntas. Para primer semestre de bachillerato.">
+<meta name="author" content="English Basics">
+<meta property="og:title" content="Verb To Be – English Basics">
+<meta property="og:description" content="Aprende am, is, are con ejemplos, videos y ejercicios interactivos.">
+<meta property="og:type" content="website">
+<title>Verb To Be – English Basics</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #1B2A4A;
+    --blue: #3D6FF8;
+    --yellow: #FFD23F;
+    --coral: #FF6B6B;
+    --mint: #2EC4B6;
+    --purple: #9B5DE5;
+    --green: #27AE60;
+    --light: #F0F4FF;
+    --white: #FFFFFF;
+    --gray: #6B7A99;
+    --radius: 18px;
+    --shadow: 0 6px 24px rgba(27,42,74,0.12);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Nunito', sans-serif; background: var(--light); color: var(--navy); overflow-x: hidden; }
+
+  /* NAV */
+  nav { background: var(--navy); position: sticky; top: 0; z-index: 100; padding: 0 1rem; box-shadow: 0 3px 12px rgba(0,0,0,0.3); }
+  .nav-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; gap: 4px; flex-wrap: wrap; padding: 8px 0; }
+  nav .brand { font-family: 'Fredoka One', cursive; color: var(--yellow); font-size: 1.2rem; margin-right: 12px; white-space: nowrap; }
+  nav a { color: rgba(255,255,255,0.85); text-decoration: none; font-size: 0.82rem; font-weight: 700; padding: 6px 12px; border-radius: 30px; transition: background 0.2s, color 0.2s; white-space: nowrap; }
+  nav a:hover, nav a.active { background: var(--yellow); color: var(--navy); }
+
+  /* HERO */
+  .hero { background: linear-gradient(135deg, #1B2A4A 0%, #2D1B6E 50%, #4A1B8A 100%); color: white; padding: 70px 1rem 80px; text-align: center; position: relative; overflow: hidden; }
+  .hero::before { content:''; position:absolute; inset:0; background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Ccircle cx='30' cy='30' r='20'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); }
+  .hero-badge { display: inline-block; background: var(--yellow); color: var(--navy); font-size: 0.78rem; font-weight: 800; padding: 5px 16px; border-radius: 30px; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 18px; position: relative; }
+  .hero h1 { font-family: 'Fredoka One', cursive; font-size: clamp(2.4rem, 7vw, 4.2rem); line-height: 1.05; margin-bottom: 18px; position: relative; }
+  .hero h1 span { color: var(--yellow); }
+  .hero p { font-size: 1.1rem; color: rgba(255,255,255,0.8); max-width: 580px; margin: 0 auto 32px; position: relative; }
+  .hero-forms { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; position: relative; }
+  .form-card { background: rgba(255,255,255,0.12); border: 2px solid rgba(255,255,255,0.25); border-radius: 16px; padding: 16px 28px; text-align: center; backdrop-filter: blur(4px); }
+  .form-card .fc-word { font-family: 'Fredoka One', cursive; font-size: 2rem; display: block; }
+  .form-card .fc-use { font-size: 0.75rem; opacity: 0.75; margin-top: 2px; display: block; }
+  .form-card.am { border-color: var(--mint); }
+  .form-card.is { border-color: var(--coral); }
+  .form-card.are { border-color: var(--yellow); }
+  .form-card.am .fc-word { color: var(--mint); }
+  .form-card.is .fc-word { color: var(--coral); }
+  .form-card.are .fc-word { color: var(--yellow); }
+
+  /* WRAP */
+  .wrap { max-width: 1100px; margin: 0 auto; padding: 0 1rem; }
+  .section { padding: 60px 1rem; }
+  .section-header { text-align: center; margin-bottom: 40px; }
+  .section-tag { display: inline-block; font-size: 0.75rem; font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase; padding: 4px 14px; border-radius: 30px; margin-bottom: 10px; }
+  .tag-blue   { background: #DDE8FF; color: var(--blue); }
+  .tag-coral  { background: #FFE8E8; color: var(--coral); }
+  .tag-mint   { background: #D6F5F3; color: #0D9488; }
+  .tag-purple { background: #EFE0FF; color: var(--purple); }
+  .tag-yellow { background: #FFF3C4; color: #9B6F00; }
+  .tag-green  { background: #D4EDDA; color: var(--green); }
+  .section-header h2 { font-family: 'Fredoka One', cursive; font-size: clamp(1.8rem, 4vw, 2.6rem); margin-bottom: 8px; }
+  .section-header p { color: var(--gray); max-width: 560px; margin: 0 auto; font-size: 1rem; line-height: 1.6; }
+
+  /* CARDS */
+  .card { background: var(--white); border-radius: var(--radius); box-shadow: var(--shadow); padding: 28px; }
+  .card-grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+  .card-grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; }
+
+  /* ── INTRO SECTION ── */
+  .intro-section { background: var(--white); }
+  .intro-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; align-items: start; }
+  @media(max-width:700px){ .intro-grid { grid-template-columns: 1fr; } }
+
+  .meaning-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .meaning-card { border-radius: 14px; padding: 18px; text-align: center; }
+  .meaning-card .mc-word { font-family: 'Fredoka One', cursive; font-size: 1.6rem; display: block; margin-bottom: 4px; }
+  .meaning-card .mc-es { font-size: 0.82rem; font-weight: 700; opacity: 0.75; }
+
+  .formula-strip { display: grid; grid-template-columns: repeat(3,1fr); gap: 12px; margin-bottom: 20px; }
+  .fs-box { border-radius: 14px; padding: 16px 12px; text-align: center; }
+  .fs-box .fs-pronoun { font-size: 0.78rem; font-weight: 800; text-transform: uppercase; letter-spacing: .5px; opacity: 0.7; margin-bottom: 4px; }
+  .fs-box .fs-verb { font-family: 'Fredoka One', cursive; font-size: 1.5rem; }
+  .fs-box .fs-ex { font-size: 0.75rem; margin-top: 4px; opacity: 0.8; font-style: italic; }
+
+  /* ── AFFIRMATIVE SECTION ── */
+  .aff-section { background: var(--light); }
+  .tobe-table-wrap { overflow-x: auto; }
+  .tobe-table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+  .tobe-table th { padding: 13px 16px; text-align: left; font-weight: 800; font-size: 0.8rem; letter-spacing: .5px; text-transform: uppercase; }
+  .tobe-table td { padding: 13px 16px; border-bottom: 1px solid #EEF0F8; }
+  .tobe-table tr:last-child td { border-bottom: none; }
+  .tobe-table .pronoun { font-family: 'Fredoka One', cursive; font-size: 1.05rem; }
+  .tobe-badge { display: inline-block; font-family: 'Fredoka One', cursive; font-size: 1.1rem; padding: 4px 18px; border-radius: 20px; }
+  .contraction { color: var(--gray); font-style: italic; font-size: 0.9rem; }
+
+  .tip-box { border-radius: 14px; padding: 18px 20px; margin-top: 16px; display: flex; gap: 12px; align-items: flex-start; }
+  .tip-box .tip-icon { font-size: 1.5rem; flex-shrink: 0; }
+  .tip-box h4 { font-size: 0.9rem; font-weight: 800; margin-bottom: 4px; }
+  .tip-box p { font-size: 0.85rem; line-height: 1.5; }
+
+  /* ── NEGATIVE SECTION ── */
+  .neg-section { background: var(--white); }
+  .neg-formula { background: linear-gradient(135deg, #FF6B6B, #C0392B); border-radius: var(--radius); padding: 28px 32px; color: white; margin-bottom: 28px; display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; }
+  .neg-formula h3 { font-family: 'Fredoka One', cursive; font-size: 1.6rem; margin-bottom: 6px; }
+  .neg-formula p { opacity: 0.9; max-width: 380px; font-size: 0.95rem; }
+  .neg-formula-box { background: rgba(255,255,255,0.18); border: 2px solid rgba(255,255,255,0.35); border-radius: 12px; padding: 14px 22px; text-align: center; flex-shrink: 0; }
+  .neg-formula-box .nf { font-family: 'Fredoka One', cursive; font-size: 1.15rem; letter-spacing: 1px; }
+  .neg-formula-box .nf-sub { font-size: 0.72rem; opacity: 0.7; margin-top: 3px; }
+
+  /* ── QUESTIONS SECTION ── */
+  .q-section { background: var(--light); }
+  .q-formula { background: linear-gradient(135deg, #3D6FF8, #1A3FA0); border-radius: var(--radius); padding: 28px 32px; color: white; margin-bottom: 28px; display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; }
+  .q-formula h3 { font-family: 'Fredoka One', cursive; font-size: 1.6rem; margin-bottom: 6px; }
+  .q-formula p { opacity: 0.9; max-width: 380px; font-size: 0.95rem; }
+  .q-formula-box { background: rgba(255,255,255,0.18); border: 2px solid rgba(255,255,255,0.35); border-radius: 12px; padding: 14px 22px; text-align: center; flex-shrink: 0; }
+  .q-formula-box .qf { font-family: 'Fredoka One', cursive; font-size: 1.1rem; }
+  .q-formula-box .qf-sub { font-size: 0.72rem; opacity: 0.7; margin-top: 3px; }
+  .q-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; }
+  .q-card { background: var(--white); border-radius: 14px; padding: 22px; box-shadow: var(--shadow); }
+  .q-card .qc-label { font-size: 0.72rem; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 12px; display: block; }
+  .q-card ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+  .q-card ul li { font-weight: 700; font-size: 0.95rem; display: flex; align-items: flex-start; gap: 8px; }
+  .q-card ul li::before { content: '›'; font-size: 1.1rem; flex-shrink: 0; }
+  .q-card .es-small { font-size: 0.78rem; font-weight: 400; color: var(--gray); font-style: italic; display: block; margin-top: 2px; }
+
+  /* ── USES SECTION ── */
+  .uses-section { background: var(--white); }
+  .uses-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 16px; }
+  .use-card { border-radius: 14px; padding: 22px 18px; }
+  .use-card .icon { font-size: 2rem; margin-bottom: 10px; display: block; }
+  .use-card h4 { font-size: 0.92rem; font-weight: 800; margin-bottom: 6px; }
+  .use-card p { font-size: 0.82rem; line-height: 1.5; opacity: 0.8; margin-bottom: 10px; }
+  .use-card .ex { font-style: italic; font-size: 0.82rem; background: rgba(0,0,0,0.07); padding: 5px 10px; border-radius: 8px; line-height: 1.5; }
+
+  /* ── RESOURCES SECTION ── */
+  .res-section { background: var(--light); }
+  .video-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
+  .video-card { background: var(--white); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
+  .video-card iframe { width: 100%; height: 195px; display: block; border: none; }
+  .video-info { padding: 16px 20px; }
+  .vtag { font-size: 0.7rem; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; }
+  .video-info h4 { font-weight: 800; margin: 6px 0 4px; font-size: 0.98rem; }
+  .video-info p { font-size: 0.83rem; color: var(--gray); line-height: 1.5; }
+  .links-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 16px; margin-top: 32px; }
+  .link-card { border-radius: 14px; padding: 18px; text-decoration: none; color: inherit; display: flex; gap: 12px; align-items: flex-start; transition: transform 0.2s, box-shadow 0.2s; }
+  .link-card:hover { transform: translateY(-3px); box-shadow: 0 10px 28px rgba(0,0,0,0.13); }
+  .link-icon { width: 42px; height: 42px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; flex-shrink: 0; }
+  .link-card h4 { font-size: 0.93rem; font-weight: 800; margin-bottom: 3px; }
+  .link-card p { font-size: 0.78rem; opacity: 0.7; line-height: 1.4; }
+
+  /* ── EXAMPLES SECTION ── */
+  .ex-section { background: var(--white); }
+  .etabs { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; margin-bottom: 30px; }
+  .etab { border: 2.5px solid var(--navy); border-radius: 30px; padding: 8px 22px; font-size: 0.88rem; font-weight: 700; cursor: pointer; background: transparent; color: var(--navy); transition: all 0.2s; font-family: 'Nunito', sans-serif; }
+  .etab.active, .etab:hover { background: var(--navy); color: white; }
+  .epanel { display: none; }
+  .epanel.active { display: block; }
+  .ex-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+  .ex-card { background: var(--light); border-radius: 16px; padding: 20px; border-top: 5px solid var(--blue); }
+  .ex-card.coral { border-top-color: var(--coral); }
+  .ex-card.mint { border-top-color: var(--mint); }
+  .ex-card.purple { border-top-color: var(--purple); }
+  .ex-card.green { border-top-color: var(--green); }
+  .ex-card .en { font-family: 'Fredoka One', cursive; font-size: 1.2rem; color: var(--navy); margin-bottom: 5px; }
+  .ex-card .es { font-size: 0.85rem; color: var(--gray); margin-bottom: 10px; line-height: 1.4; }
+  .ex-card .chips { display: flex; gap: 5px; flex-wrap: wrap; }
+  .chip { padding: 3px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 700; }
+
+  .dialogue-box { background: var(--light); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
+  .dialogue-header { background: var(--navy); color: white; padding: 14px 22px; font-weight: 700; font-size: 0.9rem; display: flex; align-items: center; gap: 8px; }
+  .dialogue-body { padding: 22px; display: flex; flex-direction: column; gap: 16px; }
+  .bubble { max-width: 82%; padding: 13px 18px; border-radius: 18px; font-size: 0.93rem; line-height: 1.5; }
+  .bubble.a { background: white; border-radius: 18px 18px 18px 4px; align-self: flex-start; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+  .bubble.b { background: var(--purple); color: white; border-radius: 18px 18px 4px 18px; align-self: flex-end; }
+  .bubble .speaker { font-size: 0.72rem; font-weight: 800; display: block; margin-bottom: 4px; opacity: 0.65; }
+  .bubble .es-t { font-size: 0.78rem; opacity: 0.65; font-style: italic; margin-top: 5px; display: block; }
+  .highlight-verb { font-weight: 900; text-decoration: underline; text-underline-offset: 3px; }
+
+  /* ── PRACTICE SECTION ── */
+  .practice-section { background: var(--light); }
+  .ptabs { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; margin-bottom: 32px; }
+  .ptab { padding: 10px 24px; border-radius: 30px; font-size: 0.88rem; font-weight: 700; cursor: pointer; border: 2.5px solid var(--purple); background: transparent; color: var(--purple); transition: all 0.2s; font-family: 'Nunito', sans-serif; }
+  .ptab.active, .ptab:hover { background: var(--purple); color: white; }
+  .ppanel { display: none; }
+  .ppanel.active { display: block; }
+
+  .ex-intro { text-align: center; margin-bottom: 28px; }
+  .ex-intro h3 { font-family: 'Fredoka One', cursive; font-size: 1.5rem; margin-bottom: 6px; }
+  .ex-intro p { color: var(--gray); font-size: 0.95rem; }
+
+  /* Fill blank */
+  .fb-list { display: flex; flex-direction: column; gap: 14px; max-width: 720px; margin: 0 auto; }
+  .fb-item { background: var(--white); border-radius: 14px; padding: 16px 20px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; font-size: 1rem; font-weight: 600; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+  .fb-num { width: 28px; height: 28px; background: var(--purple); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.82rem; font-weight: 800; flex-shrink: 0; }
+  .fb-input { border: 2.5px solid #C0CCEE; border-radius: 10px; padding: 6px 12px; font-size: 1rem; font-family: 'Nunito', sans-serif; font-weight: 700; color: var(--navy); width: 78px; text-align: center; outline: none; transition: border-color 0.2s; }
+  .fb-input:focus { border-color: var(--purple); }
+  .fb-input.correct { border-color: var(--mint); background: #D6F5F3; }
+  .fb-input.wrong { border-color: var(--coral); background: #FFE8E8; }
+
+  /* Multiple choice */
+  .mc-list { display: flex; flex-direction: column; gap: 20px; max-width: 720px; margin: 0 auto; }
+  .mc-item { background: var(--white); border-radius: 14px; padding: 20px 22px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+  .mc-q { font-weight: 700; font-size: 1rem; margin-bottom: 14px; line-height: 1.5; }
+  .mc-opts { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .mc-opt { padding: 10px 14px; border: 2.5px solid #C0CCEE; border-radius: 12px; cursor: pointer; font-family: 'Nunito', sans-serif; font-size: 0.9rem; font-weight: 700; background: var(--white); color: var(--navy); transition: all 0.2s; text-align: left; }
+  .mc-opt:hover:not(:disabled) { border-color: var(--purple); background: #EFE0FF; }
+  .mc-opt.correct { border-color: var(--mint); background: #D6F5F3; color: #0D7A70; }
+  .mc-opt.wrong { border-color: var(--coral); background: #FFE8E8; color: #8B1A1A; }
+  .mc-opt:disabled { cursor: default; }
+
+  /* Transform */
+  .tf-list { display: flex; flex-direction: column; gap: 18px; max-width: 720px; margin: 0 auto; }
+  .tf-item { background: var(--white); border-radius: 14px; padding: 20px 22px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+  .tf-num { display: inline-flex; width: 26px; height: 26px; background: var(--blue); color: white; border-radius: 50%; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: 800; margin-right: 6px; flex-shrink: 0; }
+  .tf-prompt { font-size: 0.8rem; font-weight: 800; color: var(--gray); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px; }
+  .tf-original { font-weight: 700; font-size: 1rem; margin-bottom: 12px; background: var(--light); padding: 8px 14px; border-radius: 10px; display: inline-block; }
+  .tf-label { font-size: 0.82rem; font-weight: 700; color: var(--blue); margin-bottom: 6px; display: block; }
+  .tf-input { border: 2.5px solid #C0CCEE; border-radius: 10px; padding: 8px 14px; font-size: 0.95rem; font-family: 'Nunito', sans-serif; font-weight: 600; color: var(--navy); width: 100%; outline: none; transition: border-color 0.2s; }
+  .tf-input:focus { border-color: var(--blue); }
+  .tf-input.correct { border-color: var(--mint); background: #D6F5F3; }
+  .tf-input.wrong { border-color: var(--coral); background: #FFE8E8; }
+  .tf-answer { font-size: 0.82rem; font-weight: 700; margin-top: 6px; display: none; padding: 5px 12px; border-radius: 8px; }
+
+  /* Buttons & Score */
+  .check-btn { display: block; margin: 28px auto 0; background: var(--purple); color: white; border: none; border-radius: 30px; padding: 13px 38px; font-family: 'Nunito', sans-serif; font-size: 1rem; font-weight: 800; cursor: pointer; transition: background 0.2s, transform 0.15s; }
+  .check-btn:hover { background: #7A3AC8; transform: translateY(-2px); }
+  .reset-btn { display: block; margin: 12px auto 0; background: transparent; color: var(--gray); border: 2px solid #C0CCEE; border-radius: 30px; padding: 8px 24px; font-family: 'Nunito', sans-serif; font-size: 0.85rem; font-weight: 700; cursor: pointer; transition: all 0.2s; }
+  .reset-btn:hover { border-color: var(--navy); color: var(--navy); }
+  .score-box { text-align: center; margin-top: 20px; padding: 18px 24px; border-radius: 14px; display: none; }
+  .score-box h4 { font-family: 'Fredoka One', cursive; font-size: 1.7rem; margin-bottom: 4px; }
+  .score-box p { font-size: 0.9rem; }
+
+  /* FOOTER */
+  footer { background: var(--navy); color: rgba(255,255,255,0.65); text-align: center; padding: 30px 1rem; font-size: 0.85rem; line-height: 1.8; }
+  footer strong { color: var(--yellow); }
+  footer a { color: var(--yellow); text-decoration: none; }
+
+  @keyframes fadeUp { from { opacity:0; transform: translateY(22px); } to { opacity:1; transform: translateY(0); } }
+  .fade-up { animation: fadeUp 0.55s ease both; }
+  .d1 { animation-delay:.1s } .d2 { animation-delay:.2s } .d3 { animation-delay:.3s }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <span class="brand">🔵 Verb To Be</span>
+    <a href="#intro">¿Qué es?</a>
+    <a href="#affirmative">Afirmativo</a>
+    <a href="#negative">Negativo</a>
+    <a href="#questions">Preguntas</a>
+    <a href="#uses">Usos</a>
+    <a href="#resources">Recursos</a>
+    <a href="#examples">Ejemplos</a>
+    <a href="#practice">Practica</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-badge fade-up">First Semester · Nivel A1 · Bachillerato</div>
+    <h1 class="fade-up d1">The Verb<br><span>"To Be"</span> 🔵</h1>
+    <p class="fade-up d2">Aprende a usar el verbo más importante del inglés: sus tres formas en presente, usos y cómo formar oraciones afirmativas, negativas y preguntas.</p>
+    <div class="hero-forms fade-up d3">
+      <div class="form-card am">
+        <span class="fc-word">AM</span>
+        <span class="fc-use">Solo con I</span>
+      </div>
+      <div class="form-card is">
+        <span class="fc-word">IS</span>
+        <span class="fc-use">He · She · It</span>
+      </div>
+      <div class="form-card are">
+        <span class="fc-word">ARE</span>
+        <span class="fc-use">You · We · They</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ══════════════════════════════ -->
+<!--  SECTION 1 · INTRO            -->
+<!-- ══════════════════════════════ -->
+<section class="section intro-section" id="intro">
+  <div class="wrap">
+    <div class="section-header">
+      <span class="section-tag tag-purple">¿Qué es?</span>
+      <h2>What is "To Be"? 🤔</h2>
+      <p>El verbo <em>to be</em> es el verbo más usado en inglés. Significa <strong>"ser" o "estar"</strong> dependiendo del contexto, y es la base de casi todas las oraciones.</p>
+    </div>
+
+    <div class="intro-grid">
+      <div class="card">
+        <h3 style="font-family:'Fredoka One',cursive; font-size:1.3rem; margin-bottom:16px;">📖 Significado en español</h3>
+        <div class="meaning-cards">
+          <div class="meaning-card" style="background:#EEF2FF;">
+            <span class="mc-word" style="color:var(--blue)">To Be</span>
+            <span class="mc-es">= Ser</span>
+            <div style="font-size:0.78rem;color:var(--gray);margin-top:8px;font-style:italic;">She <strong>is</strong> a doctor.<br>Ella <strong>es</strong> doctora.</div>
+          </div>
+          <div class="meaning-card" style="background:#D6F5F3;">
+            <span class="mc-word" style="color:var(--mint)">To Be</span>
+            <span class="mc-es">= Estar</span>
+            <div style="font-size:0.78rem;color:var(--gray);margin-top:8px;font-style:italic;">I <strong>am</strong> at home.<br>Yo <strong>estoy</strong> en casa.</div>
+          </div>
+        </div>
+        <div class="tip-box" style="background:#FFF3C4;">
+          <div class="tip-icon">💡</div>
+          <div>
+            <h4 style="color:#7A5200;">¿Ser o Estar?</h4>
+            <p style="color:#555;">En inglés no hay diferencia entre "ser" y "estar" — el verbo <em>to be</em> cubre ambos significados. El contexto de la oración indica cuál se usa en español.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3 style="font-family:'Fredoka One',cursive; font-size:1.3rem; margin-bottom:16px;">⚡ Las 3 formas del presente</h3>
+        <div class="formula-strip">
+          <div class="fs-box" style="background:#EEF2FF;">
+            <div class="fs-pronoun" style="color:var(--blue)">I</div>
+            <div class="fs-verb" style="color:var(--blue)">AM</div>
+            <div class="fs-ex">"I'm happy"</div>
+          </div>
+          <div class="fs-box" style="background:#FFE8E8;">
+            <div class="fs-pronoun" style="color:var(--coral)">He / She / It</div>
+            <div class="fs-verb" style="color:var(--coral)">IS</div>
+            <div class="fs-ex">"She's nice"</div>
+          </div>
+          <div class="fs-box" style="background:#D6F5F3;">
+            <div class="fs-pronoun" style="color:#0D9488">You / We / They</div>
+            <div class="fs-verb" style="color:#0D9488">ARE</div>
+            <div class="fs-ex">"We're friends"</div>
+          </div>
+        </div>
+        <div class="tip-box" style="background:#EFE0FF;">
+          <div class="tip-icon">🔑</div>
+          <div>
+            <h4 style="color:var(--purple);">Regla de oro</h4>
+            <p style="color:#555;"><strong>AM</strong> siempre va con <em>I</em>. <strong>IS</strong> siempre va con <em>He, She, It</em>. <strong>ARE</strong> va con <em>You, We, They</em>. ¡Solo hay que memorizar estas tres combinaciones!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════ -->
+<!--  SECTION 2 · AFFIRMATIVE      -->
+<!-- ══════════════════════════════ -->
+<section class="section aff-section" id="affirmative">
+  <div class="wrap">
+    <div class="section-header">
+      <span class="section-tag tag-mint">Afirmativo</span>
+      <h2>Affirmative Form ✅</h2>
+      <p>Las oraciones afirmativas dicen que algo <strong>ES</strong> verdad. La fórmula es simple: <strong>Sujeto + To Be + …</strong></p>
+    </div>
+
+    <div class="card-grid-2" style="margin-bottom:24px;">
+      <div class="card">
+        <h3 style="font-family:'Fredoka One',cursive; font-size:1.2rem; margin-bottom:16px; color:var(--mint);">📊 Formas largas y contracciones</h3>
+        <div class="tobe-table-wrap">
+          <table class="tobe-table">
+            <thead style="background:#D6F5F3;">
+              <tr>
+                <th style="color:#0D7A70;">Pronombre</th>
+                <th style="color:#0D7A70;">Forma larga</th>
+                <th style="color:#0D7A70;">Contracción</th>
+                <th style="color:#0D7A70;">Ejemplo</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="pronoun">I</td><td><span class="tobe-badge" style="background:#EEF2FF;color:var(--blue);">am</span></td><td class="contraction">I'm</td><td><em>I am a student.</em></td></tr>
+              <tr><td class="pronoun">You</td><td><span class="tobe-badge" style="background:#D6F5F3;color:#0D7A70;">are</span></td><td class="contraction">You're</td><td><em>You are smart.</em></td></tr>
+              <tr><td class="pronoun">He</td><td><span class="tobe-badge" style="background:#FFE8E8;color:var(--coral);">is</span></td><td class="contraction">He's</td><td><em>He is my brother.</em></td></tr>
+              <tr><td class="pronoun">She</td><td><span class="tobe-badge" style="background:#FFE8E8;color:var(--coral);">is</span></td><td class="contraction">She's</td><td><em>She is a teacher.</em></td></tr>
+              <tr><td class="pronoun">It</td><td><span class="tobe-badge" style="background:#FFE8E8;color:var(--coral);">is</span></td><td class="contraction">It's</td><td><em>It is cold today.</em></td></tr>
+              <tr><td class="pronoun">We</td><td><span class="tobe-badge" style="background:#D6F5F3;color:#0D7A70;">are</span></td><td class="contraction">We're</td><td><em>We are friends.</em></td></tr>
+              <tr><td class="pronoun">You (pl.)</td><td><span class="tobe-badge" style="background:#D6F5F3;color:#0D7A70;">are</span></td><td class="contraction">You're</td><td><em>You are welcome.</em></td></tr>
+              <tr><td class="pronoun">They</td><td><span class="tobe-badge" style="background:#D6F5F3;color:#0D7A70;">are</span></td><td class="contraction">They're</td><td><em>They are happy.</em></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div>
+        <div class="card" style="margin-bottom:16px; border-left:5px solid var(--mint); border-radius:0 var(--radius) var(--radius) 0;">
+          <h4 style="font-weight:800; margin-bottom:10px;">✏️ ¿Cuándo usar la contracción?</h4>
+          <p style="font-size:0.9rem; color:var(--gray); line-height:1.6; margin-bottom:10px;">Las contracciones son la forma <strong>hablada e informal</strong>. En conversaciones cotidianas y textos informales siempre se usan. En escritura formal (ensayos, cartas) se prefiere la forma larga.</p>
+          <div style="background:var(--light); border-radius:10px; padding:12px 16px; font-size:0.88rem; line-height:2;">
+            <span style="color:var(--gray);">Formal →</span> <strong>I am</strong> a student.<br>
+            <span style="color:var(--mint);">Informal →</span> <strong>I'm</strong> a student.
+          </div>
+        </div>
+        <div class="card" style="border-left:5px solid var(--yellow); border-radius:0 var(--radius) var(--radius) 0;">
+          <h4 style="font-weight:800; margin-bottom:10px;">⚠️ ¡Ojo! You es singular Y plural</h4>
+          <p style="font-size:0.9rem; color:var(--gray); line-height:1.6;">En inglés, <strong>You are</strong> se usa para hablarle a <em>una persona</em> o a un <em>grupo</em>. Solo el contexto y el resto de la oración indica cuál es cuál.</p>
+          <div style="background:#FFF8F0; border-radius:10px; padding:10px 14px; margin-top:10px; font-size:0.87rem; line-height:1.8;">
+            <strong>You're</strong> my friend. <em style="color:var(--gray)">(una persona)</em><br>
+            <strong>You're</strong> all welcome! <em style="color:var(--gray)">(grupo)</em>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════ -->
+<!--  SECTION 3 · NEGATIVE         -->
+<!-- ══════════════════════════════ -->
+<section class="section neg-section" id="negative">
+  <div class="wrap">
+    <div class="section-header">
+      <span class="section-tag tag-coral">Negativo</span>
+      <h2>Negative Form ❌</h2>
+      <p>Para hacer una oración negativa, solo agrega <strong>not</strong> después del verbo to be.</p>
+    </div>
+
+    <div class="neg-formula">
+      <div>
+        <h3>📌 La fórmula negativa</h3>
+        <p>Simplemente añade <strong>not</strong> después de am / is / are. ¡Así de fácil!</p>
+      </div>
+      <div class="neg-formula-box">
+        <div class="nf">Sujeto + To Be + NOT + …</div>
+        <div class="nf-sub">I am not · She is not · They are not</div>
+      </div>
+    </div>
+
+    <div class="card-grid-2" style="margin-bottom:24px;">
+      <div class="card">
+        <h3 style="font-family:'Fredoka One',cursive; font-size:1.2rem; margin-bottom:16px; color:var(--coral);">📊 Formas negativas y contracciones</h3>
+        <div class="tobe-table-wrap">
+          <table class="tobe-table">
+            <thead style="background:#FFE8E8;">
+              <tr>
+                <th style="color:#8B1A1A;">Pronombre</th>
+                <th style="color:#8B1A1A;">Forma larga</th>
+                <th style="color:#8B1A1A;">Contracción 1</th>
+                <th style="color:#8B1A1A;">Contracción 2</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="pronoun">I</td><td>I am not</td><td class="contraction">I'm not ✔</td><td style="color:#C0CCEE;font-style:italic;">—</td></tr>
+              <tr><td class="pronoun">You</td><td>You are not</td><td class="contraction">You aren't</td><td class="contraction">You're not</td></tr>
+              <tr><td class="pronoun">He</td><td>He is not</td><td class="contraction">He isn't</td><td class="contraction">He's not</td></tr>
+              <tr><td class="pronoun">She</td><td>She is not</td><td class="contraction">She isn't</td><td class="contraction">She's not</td></tr>
+              <tr><td class="pronoun">It</td><td>It is not</td><td class="contraction">It isn't</td><td class="contraction">It's not</td></tr>
+              <tr><td class="pronoun">We</td><td>We are not</td><td class="contraction">We aren't</td><td class="contraction">We're not</td></tr>
+              <tr><td class="pronoun">You (pl.)</td><td>You are not</td><td class="contraction">You aren't</td><td class="contraction">You're not</td></tr>
+              <tr><td class="pronoun">They</td><td>They are not</td><td class="contraction">They aren't</td><td class="contraction">They're not</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div>
+        <div class="card" style="margin-bottom:16px; border-left:5px solid var(--coral); border-radius:0 var(--radius) var(--radius) 0;">
+          <div style="font-size:1.5rem; margin-bottom:8px;">⚠️</div>
+          <h4 style="font-weight:800; margin-bottom:8px; color:var(--coral);">Excepción: I'm not</h4>
+          <p style="font-size:0.9rem; color:var(--gray); line-height:1.6; margin-bottom:10px;"><strong>I am not</strong> solo tiene UNA contracción posible: <strong>I'm not</strong>. La forma <em>"I amn't"</em> no existe en inglés.</p>
+          <div style="background:#FFE8E8; border-radius:10px; padding:12px 14px; font-size:0.87rem; line-height:2;">
+            ✅ <strong>I'm not</strong> tired.<br>
+            ❌ <s style="color:#C0CCEE">I amn't tired.</s>
+          </div>
+        </div>
+        <div class="card" style="border-left:5px solid var(--blue); border-radius:0 var(--radius) var(--radius) 0;">
+          <div style="font-size:1.5rem; margin-bottom:8px;">📝</div>
+          <h4 style="font-weight:800; margin-bottom:8px;">Ejemplos rápidos</h4>
+          <div style="font-size:0.88rem; line-height:2.2; color:var(--navy);">
+            I <strong style="color:var(--coral)">am not</strong> late. → <em style="color:var(--gray)">No llego tarde.</em><br>
+            He <strong style="color:var(--coral)">isn't</strong> 15. → <em style="color:var(--gray)">Él no tiene 15.</em><br>
+            We <strong style="color:var(--coral)">aren't</strong> tired. → <em style="color:var(--gray)">No estamos cansados.</em><br>
+            It <strong style="color:var(--coral)">isn't</strong> far. → <em style="color:var(--gray)">No está lejos.</em>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════ -->
+<!--  SECTION 4 · QUESTIONS        -->
+<!-- ══════════════════════════════ -->
+<section class="section q-section" id="questions">
+  <div class="wrap">
+    <div class="section-header">
+      <span class="section-tag tag-blue">Preguntas</span>
+      <h2>Questions ❓</h2>
+      <p>Para hacer una pregunta con <em>to be</em>, el verbo se coloca <strong>antes del sujeto</strong>. No se necesita ningún auxiliar extra.</p>
+    </div>
+
+    <div class="q-formula">
+      <div>
+        <h3>🔄 Invierte el orden</h3>
+        <p>En inglés, para preguntar con <em>to be</em> solo debes mover el verbo al inicio de la oración. ¡Es así de sencillo!</p>
+      </div>
+      <div class="q-formula-box">
+        <div class="qf">To Be + Sujeto + … + ?</div>
+        <div class="qf-sub">Are you…? · Is she…? · Am I…?</div>
+      </div>
+    </div>
+
+    <div class="q-cards">
+      <div class="q-card">
+        <span class="qc-label" style="color:var(--blue)">❓ Yes / No Questions</span>
+        <ul style="color:var(--navy);">
+          <li style="color:var(--blue)">Am I right?<span class="es-small">¿Tengo razón?</span></li>
+          <li style="color:var(--coral)">Is she at home?<span class="es-small">¿Está ella en casa?</span></li>
+          <li style="color:var(--coral)">Is he your friend?<span class="es-small">¿Es él tu amigo?</span></li>
+          <li style="color:#0D9488">Are you a student?<span class="es-small">¿Eres estudiante?</span></li>
+          <li style="color:#0D9488">Are they tired?<span class="es-small">¿Están ellos cansados?</span></li>
+        </ul>
+      </div>
+      <div class="q-card">
+        <span class="qc-label" style="color:var(--mint)">✔ Short Answers (Respuestas cortas)</span>
+        <ul style="color:var(--navy);">
+          <li><strong>Yes,</strong> I am. / <strong>No,</strong> I'm not.<span class="es-small">Sí / No</span></li>
+          <li><strong>Yes,</strong> he is. / <strong>No,</strong> he isn't.<span class="es-small">Sí / No</span></li>
+          <li><strong>Yes,</strong> she is. / <strong>No,</strong> she isn't.<span class="es-small">Sí / No</span></li>
+          <li><strong>Yes,</strong> we are. / <strong>No,</strong> we aren't.<span class="es-small">Sí / No</span></li>
+          <li><strong>Yes,</strong> they are. / <strong>No,</strong> they aren't.<span class="es-small">Sí / No</span></li>
+        </ul>
+      </div>
+      <div class="q-card">
+        <span class="qc-label" style="color:var(--purple)">🔍 Wh- Questions</span>
+        <ul style="color:var(--navy);">
+          <li style="color:var(--purple)"><strong>What</strong> is your name?<span class="es-small">¿Cómo te llamas?</span></li>
+          <li style="color:var(--purple)"><strong>Where</strong> are you from?<span class="es-small">¿De dónde eres?</span></li>
+          <li style="color:var(--purple)"><strong>How old</strong> are you?<span class="es-small">¿Cuántos años tienes?</span></li>
+          <li style="color:var(--purple)"><strong>Who</strong> is he?<span class="es-small">¿Quién es él?</span></li>
+          <li style="color:var(--purple)"><strong>Why</strong> are you late?<span class="es-small">¿Por qué llegas tarde?</span></li>
+        </ul>
+      </div>
+      <div class="q-card" style="background:#FFF3C4;">
+        <span class="qc-label" style="color:#9B6F00">⚠️ Importante</span>
+        <p style="font-size:0.88rem; line-height:1.6; color:#555; margin-bottom:12px;">En las respuestas cortas afirmativas <strong>NO</strong> se puede usar contracción.</p>
+        <div style="font-size:0.88rem; line-height:2.2;">
+          ✅ Yes, I <strong>am</strong>.<br>
+          ❌ <s style="color:#C0CCEE">Yes, I'm.</s><br>
+          ✅ Yes, she <strong>is</strong>.<br>
+          ❌ <s style="color:#C0CCEE">Yes, she's.</s>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════ -->
+<!--  SECTION 5 · USES             -->
+<!-- ══════════════════════════════ -->
+<section class="section uses-section" id="uses">
+  <div class="wrap">
+    <div class="section-header">
+      <span class="section-tag tag-yellow">Usos</span>
+      <h2>Uses of "To Be" 🗂️</h2>
+      <p>El verbo <em>to be</em> se usa en muchas situaciones diferentes. Aquí están los principales usos que necesitas conocer.</p>
+    </div>
+    <div class="uses-grid">
+      <div class="use-card" style="background:#EEF2FF;">
+        <span class="icon">🌍</span>
+        <h4 style="color:var(--blue)">Nacionalidad / Origen</h4>
+        <p>Para decir de dónde eres o dónde está algo.</p>
+        <div class="ex">She <strong>is</strong> Mexican.<br>We <strong>are</strong> from Zacatecas.</div>
+      </div>
+      <div class="use-card" style="background:#FFE8E8;">
+        <span class="icon">💼</span>
+        <h4 style="color:var(--coral)">Profesión / Identidad</h4>
+        <p>Para decir quién eres o qué rol tienes.</p>
+        <div class="ex">He <strong>is</strong> a teacher.<br>I <strong>am</strong> a student.</div>
+      </div>
+      <div class="use-card" style="background:#D6F5F3;">
+        <span class="icon">😄</span>
+        <h4 style="color:#0D9488">Emociones / Estado</h4>
+        <p>Para expresar cómo te sientes en el momento.</p>
+        <div class="ex">I <strong>am</strong> excited!<br>They <strong>are</strong> nervous.</div>
+      </div>
+      <div class="use-card" style="background:#EFE0FF;">
+        <span class="icon">📍</span>
+        <h4 style="color:var(--purple)">Ubicación / Lugar</h4>
+        <p>Para decir dónde está una persona o cosa.</p>
+        <div class="ex">We <strong>are</strong> at school.<br>The book <strong>is</strong> on the desk.</div>
+      </div>
+      <div class="use-card" style="background:#FFF3C4;">
+        <span class="icon">📏</span>
+        <h4 style="color:#9B6F00">Descripción física</h4>
+        <p>Para describir el aspecto de personas o cosas.</p>
+        <div class="ex">She <strong>is</strong> tall and funny.<br>The car <strong>is</strong> red.</div>
+      </div>
+      <div class="use-card" style="background:#D4EDDA;">
+        <span class="icon">🎂</span>
+        <h4 style="color:var(--green)">Edad</h4>
+        <p>Para decir la edad de una persona.</p>
+        <div class="ex">I <strong>am</strong> 15 years old.<br>He <strong>is</strong> 30.</div>
+      </div>
+      <div class="use-card" style="background:#EEF2FF;">
+        <span class="icon">🌤️</span>
+        <h4 style="color:var(--blue)">Clima / Temperatura</h4>
+        <p>Para hablar sobre el clima del día.</p>
+        <div class="ex">It <strong>is</strong> very hot today.<br>It <strong>is</strong> windy outside.</div>
+      </div>
+      <div class="use-card" style="background:#FFE8E8;">
+        <span class="icon">⏰</span>
+        <h4 style="color:var(--coral)">Hora / Tiempo</h4>
+        <p>Para decir la hora o el tiempo.</p>
+        <div class="ex">It <strong>is</strong> 3 o'clock.<br>It <strong>is</strong> Monday today.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════ -->
+<!--  SECTION 6 · RESOURCES        -->
+<!-- ══════════════════════════════ -->
+<section class="section res-section" id="resources">
+  <div class="wrap">
+    <div class="section-header">
+      <span class="section-tag tag-coral">Recursos</span>
+      <h2>Real Resources 🎬</h2>
+      <p>Videos y sitios web seleccionados para reforzar el verbo <em>to be</em>. ¡Aprende con los mejores canales de inglés!</p>
+    </div>
+
+    <h3 style="font-family:'Fredoka One',cursive; font-size:1.3rem; margin-bottom:18px; display:flex; align-items:center; gap:8px;">
+      <span style="background:#FF6B6B;color:white;padding:3px 12px;border-radius:6px;font-size:0.88rem;">▶ YouTube</span> Videos
+    </h3>
+    <div class="video-grid">
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/yJNr3BrmiGo" title="Verb BE Present Tense A1" allowfullscreen loading="lazy"></iframe>
+        <div class="video-info">
+          <span class="vtag" style="color:var(--purple);">🔵 VERB TO BE · A1</span>
+          <h4>Verb "BE" – Present Tense (A1)</h4>
+          <p>Lección básica nivel A1: aprende am, is, are con ejemplos de conversaciones reales. Ideal para principiantes.</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/5wvzgid7RvU" title="Verb To Be Grammar Exercises" allowfullscreen loading="lazy"></iframe>
+        <div class="video-info">
+          <span class="vtag" style="color:var(--coral);">❌ NEGATIVO Y PREGUNTAS</span>
+          <h4>To Be – Afirmativo, Negativo y Preguntas</h4>
+          <p>Explicación completa de las tres formas: positivo, negativo e interrogativo. Canal engVid, uno de los más confiables.</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/gJrMkcWmt5g" title="Pronouns and To Be Grammar" allowfullscreen loading="lazy"></iframe>
+        <div class="video-info">
+          <span class="vtag" style="color:var(--mint);">✏️ PRÁCTICA Y EJERCICIOS</span>
+          <h4>To Be – Pronombres y Práctica</h4>
+          <p>Ejercicios con pronombres y to be. Refuerza cómo combinar cada pronombre con la forma correcta del verbo.</p>
+        </div>
+      </div>
+    </div>
+
+    <h3 style="font-family:'Fredoka One',cursive; font-size:1.3rem; margin:40px 0 18px; display:flex; align-items:center; gap:8px;">🌐 Sitios Web Interactivos</h3>
+    <div class="links-grid">
+      <a href="https://www.perfect-english-grammar.com/verb-to-be.html" target="_blank" rel="noopener" class="link-card" style="background:#EEF2FF;">
+        <div class="link-icon" style="background:#DDE8FF;">📘</div>
+        <div><h4>Perfect English Grammar</h4><p>Explicaciones y ejercicios descargables sobre el verbo to be. Muy completo y gratuito.</p></div>
+      </a>
+      <a href="https://www.englishclub.com/grammar/verb-to-be.php" target="_blank" rel="noopener" class="link-card" style="background:#D6F5F3;">
+        <div class="link-icon" style="background:#A6E8E3;">📚</div>
+        <div><h4>English Club</h4><p>Guías de gramática con quizzes interactivos sobre to be paso a paso.</p></div>
+      </a>
+      <a href="https://test-english.com/grammar-points/a1/present-simple-forms-of-to-be/" target="_blank" rel="noopener" class="link-card" style="background:#EFE0FF;">
+        <div class="link-icon" style="background:#DEC0FF;">🧪</div>
+        <div><h4>Test-English (A1)</h4><p>Ejercicios online con calificación automática. Nivel A1 específico para to be.</p></div>
+      </a>
+      <a href="https://learnenglishkids.britishcouncil.org/grammar-vocabulary/grammar-practice/present-simple-verb-be" target="_blank" rel="noopener" class="link-card" style="background:#FFF3C4;">
+        <div class="link-icon" style="background:#FFE680;">🏴󠁧󠁢󠁥󠁮󠁧󠁿</div>
+        <div><h4>British Council Kids</h4><p>Actividades interactivas del British Council enfocadas en to be. Muy visual.</p></div>
+      </a>
+      <a href="https://www.eslgamesworld.com" target="_blank" rel="noopener" class="link-card" style="background:#FFE8E8;">
+        <div class="link-icon" style="background:#FFC4C4;">🎮</div>
+        <div><h4>ESL Games World</h4><p>Juegos interactivos sobre gramática básica incluyendo to be. ¡Aprender jugando!</p></div>
+      </a>
+      <a href="https://quizlet.com" target="_blank" rel="noopener" class="link-card" style="background:#D6F5F3;">
+        <div class="link-icon" style="background:#A6E8E3;">🃏</div>
+        <div><h4>Quizlet</h4><p>Crea o busca flashcards sobre el verbo to be para memorizar las formas.</p></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════ -->
+<!--  SECTION 7 · EXAMPLES         -->
+<!-- ══════════════════════════════ -->
+<section class="section ex-section" id="examples">
+  <div class="wrap">
+    <div class="section-header">
+      <span class="section-tag tag-green">Ejemplos</span>
+      <h2>Practical Examples 💬</h2>
+      <p>Oraciones reales con el verbo <em>to be</em> en sus tres formas. El verbo aparece subrayado para que lo identifiques fácilmente.</p>
+    </div>
+
+    <div class="etabs">
+      <button class="etab active" onclick="showETab(this,'etab-aff')">✅ Affirmative</button>
+      <button class="etab" onclick="showETab(this,'etab-neg')">❌ Negative</button>
+      <button class="etab" onclick="showETab(this,'etab-q')">❓ Questions</button>
+      <button class="etab" onclick="showETab(this,'etab-dia')">💬 Dialogue</button>
+    </div>
+
+    <!-- Affirmative -->
+    <div class="epanel active" id="etab-aff">
+      <div class="ex-cards">
+        <div class="ex-card">
+          <div class="en">I <span class="highlight-verb" style="color:var(--blue)">am</span> 15 years old.</div>
+          <div class="es">Yo tengo 15 años.</div>
+          <div class="chips"><span class="chip" style="background:#EEF2FF;color:var(--blue)">I + am</span><span class="chip" style="background:#F0F4FF;color:var(--gray)">edad</span></div>
+        </div>
+        <div class="ex-card coral">
+          <div class="en">She <span class="highlight-verb" style="color:var(--coral)">is</span> a great athlete.</div>
+          <div class="es">Ella es una gran atleta.</div>
+          <div class="chips"><span class="chip" style="background:#FFE8E8;color:var(--coral)">She + is</span><span class="chip" style="background:#F0F4FF;color:var(--gray)">profesión</span></div>
+        </div>
+        <div class="ex-card mint">
+          <div class="en">We <span class="highlight-verb" style="color:#0D9488">are</span> from Mexico.</div>
+          <div class="es">Nosotros somos de México.</div>
+          <div class="chips"><span class="chip" style="background:#D6F5F3;color:#0D9488">We + are</span><span class="chip" style="background:#F0F4FF;color:var(--gray)">origen</span></div>
+        </div>
+        <div class="ex-card purple">
+          <div class="en">It <span class="highlight-verb" style="color:var(--purple)">is</span> very hot today.</div>
+          <div class="es">Hace mucho calor hoy.</div>
+          <div class="chips"><span class="chip" style="background:#EFE0FF;color:var(--purple)">It + is</span><span class="chip" style="background:#F0F4FF;color:var(--gray)">clima</span></div>
+        </div>
+        <div class="ex-card green">
+          <div class="en">They <span class="highlight-verb" style="color:var(--green)">are</span> my best friends.</div>
+          <div class="es">Ellos son mis mejores amigos.</div>
+          <div class="chips"><span class="chip" style="background:#D4EDDA;color:var(--green)">They + are</span><span class="chip" style="background:#F0F4FF;color:var(--gray)">identidad</span></div>
+        </div>
+        <div class="ex-card coral">
+          <div class="en">He <span class="highlight-verb" style="color:var(--coral)">is</span> very funny.</div>
+          <div class="es">Él es muy chistoso.</div>
+          <div class="chips"><span class="chip" style="background:#FFE8E8;color:var(--coral)">He + is</span><span class="chip" style="background:#F0F4FF;color:var(--gray)">descripción</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Negative -->
+    <div class="epanel" id="etab-neg">
+      <div class="ex-cards">
+        <div class="ex-card coral">
+          <div class="en">I <span class="highlight-verb" style="color:var(--coral)">am not</span> tired today.</div>
+          <div class="es">No estoy cansado/a hoy.</div>
+          <div class="chips"><span class="chip" style="background:#FFE8E8;color:var(--coral)">I + am not</span><span class="chip" style="background:#F0F4FF;color:var(--gray)">emoción</span></div>
+        </div>
+        <div class="ex-card">
+          <div class="en">He <span class="highlight-verb" style="color:var(--coral)">isn't</span> my teacher.</div>
+          <div class="es">Él no es mi maestro.</div>
+          <div class="chips"><span class="chip" style="background:#FFE8E8;color:var(--coral)">He + isn't</span><span class="chip" style="background:#F0F4FF;color:var(--gray)">identidad</span></div>
+        </div>
+        <div class="ex-card mint">
+          <div class="en">They <span class="highlight-verb" style="color:var(--coral)">aren't</span> at school.</div>
+          <div class="es">Ellos no están en la escuela.</div>
+          <div class="chips"><span class="chip" style="background:#FFE8E8;color:var(--coral)">They + aren't</span><span class="chip" style="background:#F0F4FF;color:var(--gray)">ubicación</span></div>
+        </div>
+        <div class="ex-card purple">
+          <div class="en">It <span class="highlight-verb" style="color:var(--coral)">isn't</span> cold outside.</div>
+          <div class="es">No hace frío afuera.</div>
+          <div class="chips"><span class="chip" style="background:#FFE8E8;color:var(--coral)">It + isn't</span><span class="chip" style="background:#F0F4FF;color:var(--gray)">clima</span></div>
+        </div>
+        <div class="ex-card coral">
+          <div class="en">She <span class="highlight-verb" style="color:var(--coral)">isn't</span> from Canada.</div>
+          <div class="es">Ella no es de Canadá.</div>
+          <div class="chips"><span class="chip" style="background:#FFE8E8;color:var(--coral)">She + isn't</span><span class="chip" style="background:#F0F4FF;color:var(--gray)">origen</span></div>
+        </div>
+        <div class="ex-card">
+          <div class="en">We <span class="highlight-verb" style="color:var(--coral)">aren't</span> late. Don't worry!</div>
+          <div class="es">No llegamos tarde. ¡No te preocupes!</div>
+          <div class="chips"><span class="chip" style="background:#FFE8E8;color:var(--coral)">We + aren't</span><span class="chip" style="background:#F0F4FF;color:var(--gray)">descripción</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Questions -->
+    <div class="epanel" id="etab-q">
+      <div class="ex-cards">
+        <div class="ex-card">
+          <div class="en"><span class="highlight-verb" style="color:var(--blue)">Are</span> you a new student?</div>
+          <div class="es">¿Eres un nuevo estudiante?</div>
+          <div class="chips"><span class="chip" style="background:#D6F5F3;color:#0D9488">Are + you</span><span class="chip" style="background:#F0F4FF;color:var(--gray)">Yes/No</span></div>
+        </div>
+        <div class="ex-card coral">
+          <div class="en"><span class="highlight-verb" style="color:var(--blue)">Is</span> he your brother?</div>
+          <div class="es">¿Es él tu hermano?</div>
+          <div class="chips"><span class="chip" style="background:#FFE8E8;color:var(--coral)">Is + he</span><span class="chip" style="background:#F0F4FF;color:var(--gray)">Yes/No</span></div>
+        </div>
+        <div class="ex-card purple">
+          <div class="en"><strong>Where</strong> <span class="highlight-verb" style="color:var(--blue)">are</span> they from?</div>
+          <div class="es">¿De dónde son ellos?</div>
+          <div class="chips"><span class="chip" style="background:#EFE0FF;color:var(--purple)">Wh-</span><span class="chip" style="background:#D6F5F3;color:#0D9488">Are + they</span></div>
+        </div>
+        <div class="ex-card mint">
+          <div class="en"><strong>What</strong> <span class="highlight-verb" style="color:var(--blue)">is</span> your name?</div>
+          <div class="es">¿Cómo te llamas?</div>
+          <div class="chips"><span class="chip" style="background:#EFE0FF;color:var(--purple)">Wh-</span><span class="chip" style="background:#FFE8E8;color:var(--coral)">Is + name</span></div>
+        </div>
+        <div class="ex-card">
+          <div class="en"><strong>How old</strong> <span class="highlight-verb" style="color:var(--blue)">are</span> you?</div>
+          <div class="es">¿Cuántos años tienes?</div>
+          <div class="chips"><span class="chip" style="background:#EFE0FF;color:var(--purple)">Wh-</span><span class="chip" style="background:#D6F5F3;color:#0D9488">Are + you</span></div>
+        </div>
+        <div class="ex-card coral">
+          <div class="en"><strong>Why</strong> <span class="highlight-verb" style="color:var(--blue)">is</span> she crying?</div>
+          <div class="es">¿Por qué está llorando?</div>
+          <div class="chips"><span class="chip" style="background:#EFE0FF;color:var(--purple)">Wh-</span><span class="chip" style="background:#FFE8E8;color:var(--coral)">Is + she</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dialogue -->
+    <div class="epanel" id="etab-dia">
+      <div class="card-grid-2">
+        <div class="dialogue-box">
+          <div class="dialogue-header">🎒 First Day at School — Primer día de clases</div>
+          <div class="dialogue-body">
+            <div class="bubble a">
+              <span class="speaker">ALEX 👦</span>
+              Hi! <span class="highlight-verb" style="color:var(--blue)">Are</span> you a new student?
+              <span class="es-t">¡Hola! ¿Eres nuevo estudiante?</span>
+            </div>
+            <div class="bubble b">
+              <span class="speaker">SAM 👧</span>
+              Yes, I <span class="highlight-verb" style="color:#FFD23F)">am</span>. I<span class="highlight-verb">'m</span> Sam. I<span class="highlight-verb">'m</span> from Guadalajara.
+              <span class="es-t">Sí. Me llamo Sam. Soy de Guadalajara.</span>
+            </div>
+            <div class="bubble a">
+              <span class="speaker">ALEX 👦</span>
+              Nice to meet you! <span class="highlight-verb" style="color:var(--blue)">Is</span> this your first class?
+              <span class="es-t">¡Mucho gusto! ¿Es esta tu primera clase?</span>
+            </div>
+            <div class="bubble b">
+              <span class="speaker">SAM 👧</span>
+              Yes, it <span class="highlight-verb">'s</span>. I<span class="highlight-verb">'m</span> a little nervous. <span class="highlight-verb" style="color:#FFD23F">Are</span> you in this class too?
+              <span class="es-t">Sí. Estoy un poco nerviosa. ¿Tú también estás en esta clase?</span>
+            </div>
+            <div class="bubble a">
+              <span class="speaker">ALEX 👦</span>
+              Yes! We<span class="highlight-verb">'re</span> classmates now. The teacher <span class="highlight-verb" style="color:var(--blue)">is</span> very nice!
+              <span class="es-t">¡Sí! Ahora somos compañeros. ¡El maestro es muy buena persona!</span>
+            </div>
+          </div>
+        </div>
+        <div class="dialogue-box">
+          <div class="dialogue-header">📱 Friends Chat — Chat entre amigos</div>
+          <div class="dialogue-body">
+            <div class="bubble a">
+              <span class="speaker">DIEGO 😎</span>
+              Hey! Where <span class="highlight-verb" style="color:var(--blue)">are</span> you? We<span class="highlight-verb">'re</span> at the park!
+              <span class="es-t">¡Oye! ¿Dónde estás? ¡Ya estamos en el parque!</span>
+            </div>
+            <div class="bubble b">
+              <span class="speaker">MARIA 😅</span>
+              I<span class="highlight-verb">'m</span> sorry! I<span class="highlight-verb">'m</span> at home. The bus <span class="highlight-verb" style="color:#FFD23F">isn't</span> here yet.
+              <span class="es-t">Lo siento. Estoy en casa. El camión todavía no llega.</span>
+            </div>
+            <div class="bubble a">
+              <span class="speaker">DIEGO 😎</span>
+              <span class="highlight-verb" style="color:var(--blue)">Is</span> your sister with you?
+              <span class="es-t">¿Tu hermana está contigo?</span>
+            </div>
+            <div class="bubble b">
+              <span class="speaker">MARIA 😅</span>
+              No, she <span class="highlight-verb" style="color:#FFD23F">isn't</span>. She<span class="highlight-verb">'s</span> at a friend's house. They <span class="highlight-verb" style="color:#FFD23F">aren't</span> coming today.
+              <span class="es-t">No. Está en casa de su amiga. Ellas no vienen hoy.</span>
+            </div>
+            <div class="bubble a">
+              <span class="speaker">DIEGO 😎</span>
+              OK! We <span class="highlight-verb" style="color:var(--blue)">aren't</span> in a hurry. See you soon! 🙌
+              <span class="es-t">¡Bien! No tenemos prisa. ¡Hasta pronto!</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════ -->
+<!--  SECTION 8 · PRACTICE         -->
+<!-- ══════════════════════════════ -->
+<section class="section practice-section" id="practice">
+  <div class="wrap">
+    <div class="section-header">
+      <span class="section-tag tag-purple">Práctica</span>
+      <h2>Let's Practice! 🏆</h2>
+      <p>Tres ejercicios para poner a prueba lo aprendido sobre el verbo <em>to be</em>. ¡Revisa tus respuestas al final!</p>
+    </div>
+
+    <div class="ptabs">
+      <button class="ptab active" onclick="showPTab(this,'pp-fill')">✏️ Fill in the Blank</button>
+      <button class="ptab" onclick="showPTab(this,'pp-mc')">🔵 Multiple Choice</button>
+      <button class="ptab" onclick="showPTab(this,'pp-tf')">🔄 Transform</button>
+    </div>
+
+    <!-- Exercise 1 -->
+    <div class="ppanel active" id="pp-fill">
+      <div class="ex-intro">
+        <h3>Complete the sentences</h3>
+        <p>Escribe <strong>am</strong>, <strong>is</strong> o <strong>are</strong> en el espacio correcto.</p>
+      </div>
+      <div class="fb-list" id="fb-form">
+        <div class="fb-item"><div class="fb-num">1</div><span>I</span><input class="fb-input" data-ans="am" placeholder="___" maxlength="3" oninput="this.value=this.value.toLowerCase()"><span>a student at this school.</span></div>
+        <div class="fb-item"><div class="fb-num">2</div><span>She</span><input class="fb-input" data-ans="is" placeholder="___" maxlength="3" oninput="this.value=this.value.toLowerCase()"><span>my best friend.</span></div>
+        <div class="fb-item"><div class="fb-num">3</div><span>They</span><input class="fb-input" data-ans="are" placeholder="___" maxlength="3" oninput="this.value=this.value.toLowerCase()"><span>very happy today.</span></div>
+        <div class="fb-item"><div class="fb-num">4</div><span>The cat</span><input class="fb-input" data-ans="is" placeholder="___" maxlength="3" oninput="this.value=this.value.toLowerCase()"><span>black and white.</span></div>
+        <div class="fb-item"><div class="fb-num">5</div><span>We</span><input class="fb-input" data-ans="are" placeholder="___" maxlength="3" oninput="this.value=this.value.toLowerCase()"><span>classmates and good friends.</span></div>
+        <div class="fb-item"><div class="fb-num">6</div><span>He</span><input class="fb-input" data-ans="is" placeholder="___" maxlength="3" oninput="this.value=this.value.toLowerCase()"><span>from the United States.</span></div>
+        <div class="fb-item"><div class="fb-num">7</div><span>You</span><input class="fb-input" data-ans="are" placeholder="___" maxlength="3" oninput="this.value=this.value.toLowerCase()"><span>a great English student!</span></div>
+        <div class="fb-item"><div class="fb-num">8</div><span>It</span><input class="fb-input" data-ans="is" placeholder="___" maxlength="3" oninput="this.value=this.value.toLowerCase()"><span>very cold outside right now.</span></div>
+        <div class="fb-item"><div class="fb-num">9</div><span>My parents</span><input class="fb-input" data-ans="are" placeholder="___" maxlength="3" oninput="this.value=this.value.toLowerCase()"><span>teachers at the same school.</span></div>
+        <div class="fb-item"><div class="fb-num">10</div><span>I</span><input class="fb-input" data-ans="am" placeholder="___" maxlength="3" oninput="this.value=this.value.toLowerCase()"><span>not late. I'm here on time!</span></div>
+      </div>
+      <button class="check-btn" onclick="checkFill()">Check Answers ✔</button>
+      <button class="reset-btn" onclick="resetFill()">🔄 Reset</button>
+      <div class="score-box" id="fb-score"></div>
+    </div>
+
+    <!-- Exercise 2 -->
+    <div class="ppanel" id="pp-mc">
+      <div class="ex-intro">
+        <h3>Choose the correct option</h3>
+        <p>Selecciona la forma correcta del verbo <em>to be</em> para cada oración.</p>
+      </div>
+      <div class="mc-list" id="mc-form">
+        <div class="mc-item" data-ans="1">
+          <div class="mc-q">1. "Hello! _____ Maria. Nice to meet you."</div>
+          <div class="mc-opts">
+            <button class="mc-opt" onclick="pickMC(this,0)">I is</button>
+            <button class="mc-opt" onclick="pickMC(this,0)">I am</button>
+            <button class="mc-opt" onclick="pickMC(this,0)">I are</button>
+            <button class="mc-opt" onclick="pickMC(this,0)">Am I</button>
+          </div>
+        </div>
+        <div class="mc-item" data-ans="2">
+          <div class="mc-q">2. "Carlos and Ana _____ from Zacatecas."</div>
+          <div class="mc-opts">
+            <button class="mc-opt" onclick="pickMC(this,1)">is</button>
+            <button class="mc-opt" onclick="pickMC(this,1)">am</button>
+            <button class="mc-opt" onclick="pickMC(this,1)">are</button>
+            <button class="mc-opt" onclick="pickMC(this,1)">be</button>
+          </div>
+        </div>
+        <div class="mc-item" data-ans="0">
+          <div class="mc-q">3. "The weather _____ perfect for soccer today."</div>
+          <div class="mc-opts">
+            <button class="mc-opt" onclick="pickMC(this,2)">is</button>
+            <button class="mc-opt" onclick="pickMC(this,2)">am</button>
+            <button class="mc-opt" onclick="pickMC(this,2)">are</button>
+            <button class="mc-opt" onclick="pickMC(this,2)">be</button>
+          </div>
+        </div>
+        <div class="mc-item" data-ans="3">
+          <div class="mc-q">4. "_____ you in grade 10 this year?"</div>
+          <div class="mc-opts">
+            <button class="mc-opt" onclick="pickMC(this,3)">Is</button>
+            <button class="mc-opt" onclick="pickMC(this,3)">Am</button>
+            <button class="mc-opt" onclick="pickMC(this,3)">Be</button>
+            <button class="mc-opt" onclick="pickMC(this,3)">Are</button>
+          </div>
+        </div>
+        <div class="mc-item" data-ans="0">
+          <div class="mc-q">5. "My dog _____ very playful and energetic."</div>
+          <div class="mc-opts">
+            <button class="mc-opt" onclick="pickMC(this,4)">is</button>
+            <button class="mc-opt" onclick="pickMC(this,4)">are</button>
+    
